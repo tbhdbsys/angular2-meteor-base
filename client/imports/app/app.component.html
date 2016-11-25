@@ -1,7 +1,7 @@
 <div>
     <ul>
-        <li *ngFor="let party of parties">
-            {{party.name}}
+        <li *ngFor="let party of parties | async">
+        {{party.name}}
             <p>{{party.description}}</p>
             <p>{{party.location}}</p>
         </li>
